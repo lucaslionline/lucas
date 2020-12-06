@@ -194,4 +194,5 @@ svg {
 }
 .btn-send:hover {
 	color: #343a40;
+	cursor: pointer;
 }
