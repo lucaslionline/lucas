@@ -40,7 +40,7 @@ footer {
 3.0 Formatting
 --------------------------------------------------------------*/
 .container {
-	padding: 0 1rem;
+	padding: 0 .5rem;
 }
 @media (min-width: 650px) {
 	.container {
