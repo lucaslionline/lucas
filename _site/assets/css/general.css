@@ -1,0 +1,177 @@
+/*--------------------------------------------------------------
+1.0 Normalize
+--------------------------------------------------------------*/
+body {
+  /*font-family: "Helvetica Neue", "Microsoft YaHei", Helvetica, Tahoma, Arial, sans-serif;
+  font-family: "Times New Roman", "Microsoft YaHei", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+}
+
+a {
+	color: #dc3545;
+	text-decoration: none;
+}
+a:hover {
+	color: #343a40;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #eee;
+}
+header {
+	margin-bottom: 2rem;
+}
+
+footer {
+	border-top: 1px dashed #ccc;
+	margin: 2rem 0;
+	font-size: 90%;
+}
+
+
+/*--------------------------------------------------------------
+2.0 Languages
+--------------------------------------------------------------*/
+.chn {
+	display: none;
+}
+
+
+/*--------------------------------------------------------------
+3.0 Formatting
+--------------------------------------------------------------*/
+.container {
+	padding: 0 1.5rem;
+}
+@media (min-width: 650px) {
+	.container {
+		width: 600px;
+		margin: 0 auto;
+	}
+}
+
+svg {
+	width: 1em;
+	height: 1em;
+}
+
+.small {
+	font-size: 90%;
+}
+.gray {
+	color: gray;
+}
+.slim {
+	font-weight: 200;
+}
+
+.pull-right {
+	float: right;
+}
+
+.list li {
+	margin-bottom: .5rem;
+}
+
+
+/*--------------------------------------------------------------
+4.0 Navigation
+--------------------------------------------------------------*/
+.nav-main ul {
+	list-style: none;
+	padding: 0;
+}
+.nav-main li {
+	display: inline-block;
+	margin-right: 1rem;
+}
+.active a {
+	border-bottom: 3px solid black;
+	pointer-events: none;
+	color: black;
+	padding-bottom: .2rem;
+}
+
+
+/*--------------------------------------------------------------
+5.0 Posts
+--------------------------------------------------------------*/
+.post-title {
+	margin-top: 3rem;
+	margin-bottom: -0.5rem;
+}
+.post-date {
+	color: gray;
+	font-size: 90%;
+}
+.page-nav {
+	margin: 3rem 0;
+	text-align: center;
+	color: gray;
+}
+
+.footnotes {
+	margin-top: 2rem;
+}
+.footnotes:before {
+	content: "References";
+	font-weight: bold;
+}
+.footnotes ol {
+	margin-top: 1rem;
+}
+.footnotes p {
+	margin: 0;
+	padding: 0;
+	font-size: 95%;
+}
+
+
+/*--------------------------------------------------------------
+6.0 Header
+--------------------------------------------------------------*/
+.site-head {
+	border-bottom: 1px dashed #ccc;
+	text-align: center;
+}
+.site-title {
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+.site-title a {
+	color: black;
+}
+.site-title a:hover {
+	color: gray;
+}
+.site-subtitle {
+	margin-top: 0;
+}
+
+
+/*--------------------------------------------------------------
+7.0 Footer
+--------------------------------------------------------------*/
+.profile {
+	display: flex;
+	align-items: center;
+	margin: 2rem 0 1rem 0;
+}
+.profile-avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px #ccc;
+	margin-right: 1rem;
+	display: inline-block;
+}
+.profile-title {
+	font-weight: bold;
+	font-size: 130%;
+}
+.profile-subtitle {
+	color: gray;
+}
+
+
+

@@ -1,0 +1,19 @@
+<header>
+	<div class="site-head">
+		<h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+		<p class="site-subtitle">{{ site.subtitle }}</p>
+	</div>
+
+	<nav class="nav-main">
+		<ul>
+			<li class="{% if page.url contains 'about' %}active{% endif %}">
+				<a href="{{ site.baseurl }}/about.html">
+					<span class="eng">About</span>
+					<span class="chn">關於</span>
+				</a>
+			</li>
+
+			<li class="pull-right" style="margin-right: 0;"><a href="javascript:;" onclick="abc()"><i data-feather="globe"></i></a></li>
+		</ul>
+	</nav>
+</header>

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+
+
+<h2 class="post-title">{{ page.title }}</h2>
+<p class="post-date">
+	<i data-feather="calendar"></i>
+	{{ page.date | date_to_string }}
+	&nbsp;
+	<i data-feather="tag"></i>
+	{% include post_tags.html %}
+</p>
+
+{{ content }}
+
+
+
+<p class="page-nav">
+	{% include pages.html %}
+</p>
