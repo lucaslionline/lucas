@@ -2,8 +2,7 @@
 1.0 Normalize
 --------------------------------------------------------------*/
 body {
-  /*font-family: "Helvetica Neue", "Microsoft YaHei", Helvetica, Tahoma, Arial, sans-serif;
-  font-family: "Times New Roman", "Microsoft YaHei", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+  font-family: Cambria, "Times New Roman", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
 }
 
 a {
