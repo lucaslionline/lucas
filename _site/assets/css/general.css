@@ -2,7 +2,7 @@
 1.0 Normalize
 --------------------------------------------------------------*/
 body {
-  font-family: Cambria, "Times New Roman", "Microsoft YaHei", "微软雅黑";
+	font-family: Cambria, "Times New Roman", "Microsoft YaHei", "微软雅黑";
 }
 
 a {
@@ -172,4 +172,26 @@ svg {
 }
 
 
-
+.form-control {
+	display: block;
+	border: 0;
+	border-top: 1px dashed #ccc;
+	width: 100%;
+	padding-top: 1rem;
+	color: #6c757d;
+	font-size: small;
+}
+.form-control:focus {
+	border-color: #dc3545;
+	outline: 0;
+}
+.btn-send {
+	border: 0;
+	font-size: medium;
+	padding: 0;
+	background: none;
+	color: #dc3545;
+}
+.btn-send:hover {
+	color: #343a40;
+}
