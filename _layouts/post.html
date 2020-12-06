@@ -1,31 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-
-<body>
-	<div class="container">
-		{% include header.html %}
-
-		<h2 class="post-title">{{ page.title }}</h2>
-		<p class="post-date">
-			<i data-feather="calendar"></i>
-			{{ page.date | date_to_string }}
-			&nbsp;
-			<i data-feather="tag"></i>
-			{% include post_tags.html %}
-		</p>
-
-		{{ content }}
+---
+layout: default
+---
 
 
+{% include header.html %}
 
-		<p class="page-nav">
-			{% include pages.html %}
-		</p>
+<h2 class="post-title">{{ page.title }}</h2>
+<p class="post-date">
+	<i data-feather="calendar"></i>
+	{{ page.date | date_to_string }}
+	&nbsp;
+	<i data-feather="tag"></i>
+	{% include post_tags.html %}
+</p>
+
+{{ content }}
 
 
-		{% include comment.html %}
-	</div>
-</body>
-</html>
+
+<p class="page-nav">
+	{% include pages.html %}
+</p>
+
+
+{% include comment.html %}
 
