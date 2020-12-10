@@ -3,7 +3,45 @@ layout: page
 title: "Blog"
 ---
 
+
 {% for post in paginator.posts %}
+
+{% if post.stickie != true %}
+{% continue %}
+{% endif %}
+
+<h2 class="post-title">
+	<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+</h2>
+
+<p class="post-date">
+	<i data-feather="calendar"></i> {{ post.date | date_to_string }}
+	&nbsp;
+	<i data-feather="tag"></i>
+	{% include post_tags.html %}
+	<i data-feather="star"></i>
+	<span><code>Featured</code></span>
+</p>
+
+{{ post.excerpt }}
+
+<p class="small">
+	<a class="btn btn-round btn-sm" href="{{ site.baseurl }}{{ post.url }}">
+		<span class="eng">Continue reading...</span>
+		<span class="chn">繼續閱讀...</span>
+	</a>
+</p>
+
+{% endfor %}
+
+
+
+{% for post in paginator.posts %}
+
+{% if post.stickie == true %}
+{% continue %}
+{% endif %}
+
 <h2 class="post-title">
 	<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 </h2>

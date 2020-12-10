@@ -69,16 +69,16 @@ title: "About"
 </p>
 
 <ol reversed class="list">
-		{% for paper in site.data.publications %}
-		<li>
-			<span class="slim">
-				{{ paper.author }}
-			</span>
-			<a href="{{ site.baseurl }}/assets/doc/{{ paper.src }}" target="_blank">{{ paper.title }}</a>.
-			<span class="slim">
-				{{ paper.journal }}.
-				<a href="{{ paper.url }}" target="_blank"><i data-feather="external-link"></i></a>
-			</span>
-		</li>
-		{% endfor %}
-	</ol>
+	{% for paper in site.data.publications %}
+	<li>
+		<span class="slim">
+			{{ paper.author }}
+		</span>
+		<a href="{{ site.baseurl }}/assets/doc/{{ paper.src }}" target="_blank">{{ paper.title }}</a>.
+		<span class="slim">
+			{{ paper.journal }}.
+			<a href="{{ paper.url }}" target="_blank"><i data-feather="external-link"></i></a>
+		</span>
+	</li>
+	{% endfor %}
+</ol>
