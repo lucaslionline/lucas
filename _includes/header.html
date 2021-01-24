@@ -13,6 +13,13 @@
 				</a>
 			</li>
 
+			<li class="{% if page.url contains 'portfolio' %}active{% endif %}">
+				<a href="{{ site.baseurl }}/portfolio.html">
+					<span class="eng">Portfolio</span>
+					<span class="chn">作品</span>
+				</a>
+			</li>
+
 			<li class="pull-right" style="margin-right: 0;"><a href="javascript:;" onclick="abc()"><i data-feather="globe"></i></a></li>
 		</ul>
 	</nav>
